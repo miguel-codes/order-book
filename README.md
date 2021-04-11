@@ -1,16 +1,10 @@
 # Orderbook
 
-To begin, run:
+In the project directory, run:
 
 `yarn install`
-
-In the project directory, you can run:
-
 `yarn start`
 
-To run tests, use:
+For tests, run:
 
 `yarn test`
-
-## Notes
-

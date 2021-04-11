@@ -5,6 +5,7 @@
     * State management to avoid passing shared props between components.
     * Full test coverage for Orderbook, especially the price grouping tests.
     * Refactor Orderbook.jsx into more components to reduce its size.
+    * Increase efficiency for price grouping.  
     * Component size queries or similar solution for a cleaner non-CSS way to handle the 
       different mobile and desktop views, and to be able to dynamically display more rows on desktop.
 2. What would you have done differently if you knew this page was going to get thousands of views
