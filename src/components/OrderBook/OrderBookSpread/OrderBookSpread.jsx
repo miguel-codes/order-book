@@ -41,7 +41,7 @@ export default function OrderBookSpread({ percent, priceGroup, setPriceGroup, sp
   }
 
   /**
-   * Returns true if the group key can be decremented.
+   * Returns true if the group price key can be decremented.
    *
    * @returns {boolean}
    */
@@ -50,7 +50,7 @@ export default function OrderBookSpread({ percent, priceGroup, setPriceGroup, sp
   }
 
   /**
-   * Returns true if the
+   * Returns true if the price group key can be incremented.
    * @returns {boolean}
    */
   function canIncrement() {
