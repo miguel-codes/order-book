@@ -10,6 +10,11 @@ OrderBookRowHeader.defaultProps = {
   reverse: false,
 };
 
+/**
+ * Header for order book rows.
+ * @param {boolean=} reverse - whether to show the columns in reverse order
+ * @returns {JSX.Element}
+ */
 export default function OrderBookRowHeader({ reverse }) {
   return (
     <div className={styles.row}>

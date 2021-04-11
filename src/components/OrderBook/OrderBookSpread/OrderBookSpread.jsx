@@ -22,7 +22,8 @@ OrderBookSpread.propTypes = {
  * @returns {JSX.Element}
  */
 export default function OrderBookSpread({ percent, priceGroup, setPriceGroup, spread }) {
-  const priceGroupToDisplay = parseFloat((ORDERBOOK_PRICE_GROUP[priceGroup]).toFixed(2)).toLocaleString(undefined, {
+  const priceGroupToDisplay = parseFloat((ORDERBOOK_PRICE_GROUP[priceGroup])
+    .toFixed(2)).toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });

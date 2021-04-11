@@ -38,7 +38,6 @@ OrderBookPage.defaultProps = {
  * @param {string[]} sortedKeys - array of sorted keys
  * @param {number} totalAsksOrBids - cumulative size of all asks or bids for order
  * @returns {JSX.Element}
- * @constructor
  */
 export default function OrderBookPage({
   asksOrBids,
