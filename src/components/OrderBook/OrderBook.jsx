@@ -126,8 +126,8 @@ export default function OrderBook() {
 
   /**
    * Updates the orders object with new ask or bid orders.
-   * @param askOrBidOrdersToUpdate - object of orders to update
-   * @param newAsksOrBids - new asks or bids to add to previous orders
+   * @param {object} askOrBidOrdersToUpdate - object of orders to update
+   * @param {object} newAsksOrBids - new asks or bids to add to previous orders
    */
   function updateOrdersObjectByType(askOrBidOrdersToUpdate, newAsksOrBids) {
     const shouldRemovePrice = (orderAmount) => orderAmount === 0;
@@ -150,7 +150,7 @@ export default function OrderBook() {
 
   /**
    * Adds a running size total to ask or bid offers.
-   * @param askOrBidOrdersToUpdate - object of orders to update
+   * @param {object} askOrBidOrdersToUpdate - object of orders to update
    * @param {boolean=} shouldReverse - true if the sorted keys ordering should be reversed
    */
   function addTotalField(askOrBidOrdersToUpdate, shouldReverse) {
