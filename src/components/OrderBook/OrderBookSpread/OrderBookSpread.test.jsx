@@ -29,15 +29,11 @@ describe('OrderBookSpread', () => {
   it('should have disabled decrement button at lowest price group', () => {
     const { getByTestId } = setupTest(1);
 
-    fireEvent.click(getByTestId('increment-price-group-button'));
-
     expect(getByTestId('decrement-price-group-button').closest('div')).toHaveClass('disabled');
   });
 
   it('should have disabled increment button at highest price group', () => {
     const { getByTestId } = setupTest(12);
-
-    fireEvent.click(getByTestId('increment-price-group-button'));
 
     expect(getByTestId('increment-price-group-button').closest('div')).toHaveClass('disabled');
   });
