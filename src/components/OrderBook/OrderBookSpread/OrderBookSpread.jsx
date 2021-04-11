@@ -13,6 +13,14 @@ OrderBookSpread.propTypes = {
   spread: PropTypes.string.isRequired,
 };
 
+/**
+ * Displays the spread and price grouping for the orderBook.
+ * @param {string} percent - spread percent
+ * @param {number} priceGroup - price group for grouping
+ * @param {function} setPriceGroup - function to update price group
+ * @param {string} spread - spread between the bid and ask price
+ * @returns {JSX.Element}
+ */
 export default function OrderBookSpread({ percent, priceGroup, setPriceGroup, spread }) {
   const priceGroupToDisplay = parseFloat((ORDERBOOK_PRICE_GROUP[priceGroup]).toFixed(2)).toLocaleString(undefined, {
     minimumFractionDigits: 2,

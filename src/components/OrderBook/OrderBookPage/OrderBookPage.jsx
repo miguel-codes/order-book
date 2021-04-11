@@ -27,6 +27,19 @@ OrderBookPage.defaultProps = {
   reverse: false,
 };
 
+/**
+ * Display a set of rows of bids or asks for an order
+ * @param {object} asksOrBids - order asks or bids
+ * @param {string=} dataTestid - data-testid for testing
+ * @param {boolean=} hideHeader - whether to hide the header
+ * @param {boolean=} isBid - true if the order type is a bid
+ * @param {boolean=} progressOnRight - whether to display the progress bar on the right
+ * @param {boolean=} reverse - whether to reverse the rows
+ * @param {string[]} sortedKeys - array of sorted keys
+ * @param {number} totalAsksOrBids - cumulative size of all asks or bids for order
+ * @returns {JSX.Element}
+ * @constructor
+ */
 export default function OrderBookPage({
   asksOrBids,
   dataTestid,
