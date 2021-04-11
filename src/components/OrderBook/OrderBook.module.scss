@@ -1,0 +1,114 @@
+@import './colors';
+
+.orderBook {
+  background-color: $card-background;
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid $ghost-color;
+  overflow: hidden;
+  font-size: 0.8rem;
+
+  .mobileView {}
+  .desktopView {}
+
+  .underlinedText {
+    display: inline-block;
+    border-bottom: 1px dotted ghostwhite;
+  }
+
+  .cardHeader {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .buttonSection {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.25rem 0.5rem;
+    color: $ghost-color;
+    font-size: 1.2rem;
+
+    .icon {
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    padding-right: 1rem;
+    margin-bottom: 0.25rem;
+
+    .rowItem {
+      flex: 1;
+      text-align: right;
+      color: $ghost-color;
+    }
+  }
+
+  .orderSectionWrapper {
+    display: flex;
+
+    .orderSection {
+      flex: 1;
+      min-width: 300px;
+    }
+  }
+
+  .spreadSection {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    color: $ghost-color;
+    width: 100%;
+
+    .spreadItem {
+      margin: 0 0.25rem;
+    }
+
+    .priceGroup {
+      display: inline-block;
+      margin-right: 0.5rem;
+      user-select: none;
+    }
+
+    .icon {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 0.25rem;
+
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .orderSectionWrapper {
+      flex-direction: column;
+    }
+    .mobileView {
+      display: block;
+    }
+
+    .desktopView {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .mobileView {
+      display: none;
+    }
+
+    .desktopView {
+      display: block;
+    }
+  }
+}

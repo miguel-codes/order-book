@@ -1,0 +1,16 @@
+@import './colors';
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: $dark-background;
+  padding: 2rem;
+  overflow-y: scroll;
+
+  .appContent {
+    flex: 1;
+  }
+}
